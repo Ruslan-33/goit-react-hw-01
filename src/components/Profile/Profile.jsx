@@ -1,13 +1,13 @@
-import { userData } from '../../userData.json';
+import css from './Profile.module.css';
 
-export const Profile = ({ name, tag, location, image, stats }) => {
+export default function Profile({ username, tag, location, image, stats }) {
   return (
-    <>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{userData.username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={css.profile_container}>
+      <div className={css.profile_up}>
+        <img className={css.profile_img} src={image} alt={username} />
+        <p className={css.profile_name}>{username}</p>
+        <p className={css.profile_tag}>@{tag}</p>
+        <p className={css.profile_location}>{location}</p>
       </div>
       <ul>
         <li>
@@ -23,6 +23,6 @@ export const Profile = ({ name, tag, location, image, stats }) => {
           <span>{stats.likes}</span>
         </li>
       </ul>
-    </>
+    </div>
   );
-};
+}
