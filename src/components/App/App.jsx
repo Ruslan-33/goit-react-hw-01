@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <Profile
-        name={userData.username}
+        username={userData.username}
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}

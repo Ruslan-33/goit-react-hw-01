@@ -1,16 +1,19 @@
 .profile_container {
-  width: 304px;
-  margin: 48px auto;
+  width: 320px;
+  margin-top: 48px;
+  margin-bottom: 48px;
   border: 2px solid black;
   border-radius: 10px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .profile_up {
   margin: 0;
-  border-radius: 24px 24px 0 0;
+  border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,20 +33,21 @@
   color: black;
   font-weight: 600;
   font-size: 22px;
-  margin-bottom: 12px;
+  margin: 6px;
 }
 
 .profile_tag {
   color: gray;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 12px;
+  margin: 6px;
 }
 
 .profile_location {
   font-weight: 400;
   font-size: 18px;
   color: gray;
+  margin: 0;
 }
 
 .profile_states {
