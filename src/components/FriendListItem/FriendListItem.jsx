@@ -1,0 +1,12 @@
+import friends from '../../friends.json';
+import css from './FriendListItem.module.css';
+
+export default function FriendListItem({ avatar, name, isOnline }) {
+  return (
+    <div>
+      <img src="" alt="Avatar" width="48" />
+      <p>Friend name</p>
+      <p>Friend status</p>
+    </div>
+  );
+}
