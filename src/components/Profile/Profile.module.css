@@ -24,7 +24,7 @@
 .profile_img {
   width: 120px;
   border-radius: 50%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.84);
   margin: 0 auto 18px;
   display: block;
 }
