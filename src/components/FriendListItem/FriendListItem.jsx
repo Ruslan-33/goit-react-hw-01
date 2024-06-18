@@ -1,12 +1,16 @@
-import friends from '../../friends.json';
-import css from '../../components/FriendListItem/FriendListItem.module.css';
+import css from '../FriendListItem/FriendListItem.module.css';
+import clsx from 'clsx';
 
-export default function FriendListItem({ avatar, name, isOnline }) {
+export default function FriendListItem({
+  friends: { avatar, name, isOnline },
+}) {
   return (
-    <div key="id">
+    <div className={css.friends}>
       <img src={avatar} alt={name} width="48" />
-      <p>{name}</p>
-      <p>{isOnline}</p>
+      <p className={css.name}>{name}</p>
+      <p className={clsx(isOnline === true ? css.Offline : css.Online)}>
+        {isOnline === true ? 'OnLine' : 'OffLine'}
+      </p>
     </div>
   );
 }

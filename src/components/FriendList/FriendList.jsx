@@ -1,27 +1,14 @@
+import FriendListItem from '../FriendListItem/FriendListItem.jsx';
 import css from '../FriendList/FriendList.module.css';
-import friends from '../../friends.json';
-import FriendListItem from '../FriendListItem/FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
-    <div>
-      <ul>
-        <li>
-          <FriendListItem />
+    <ul className={css.list}>
+      {friends.map(friend => (
+        <li className={css.friends} key={friend.id}>
+          <FriendListItem friends={friend} />
         </li>
-        <li>
-          <FriendListItem />
-        </li>
-        <li>
-          <FriendListItem />
-        </li>
-        <li>
-          <FriendListItem />
-        </li>
-        <li>
-          <FriendListItem />
-        </li>
-      </ul>
-    </div>
+      ))}
+    </ul>
   );
 }
