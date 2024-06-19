@@ -1,11 +1,15 @@
 .friend {
   text-align: center;
+  /* background-color: white; */
+  padding: 0;
+  /* margin-top: 10px; */
 }
 .name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: black;
 }
 .online {
   color: red;
